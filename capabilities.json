@@ -1,0 +1,86 @@
+{
+    "dataRoles": [{
+        "displayName": "Fields",
+        "name": "fields",
+        "kind": "GroupingOrMeasure"
+    }],
+    "objects": {
+        "general": {
+            "displayName": "General",
+            "properties": {
+                "fill": {
+                    "displayName": "Background Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "borderColor": {
+                    "displayName": "Border Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "borderWidth": {
+                    "displayName": "Border Width",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                },
+                "fontColor": {
+                    "displayName": "Font Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "buttonText": {
+                    "displayName": "Button Text",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "web": {
+            "displayName": "Webhook Settings",
+            "properties": {
+                "url": {
+                    "displayName": "Url",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [{
+        "table": {
+            "rows": {
+                "select": [{
+                    "for": {
+                        "in": "fields"
+                    }
+                }]
+            }
+        }
+    }]
+}

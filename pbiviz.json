@@ -1,0 +1,27 @@
+{
+    "visual": {
+        "name": "webHookTrigger",
+        "displayName": "Web Hook Trigger",
+        "guid": "webHookTrigger0D8225569AA24ED29F9BACE9F6A17126",
+        "visualClassName": "Visual",
+        "version": "1.0.0",
+        "description": "A button to trigger a webhook (or flow/logic app) and send the underlying table as payload. Very useful when you want to export data somewhere.",
+        "supportUrl": "http://www.hso.com",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "2.6.0",
+    "author": {
+        "name": "Mark Baas (HSO Innovation)",
+        "email": "mark.baas@gmail.com"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": [
+
+    ],
+    "style": "style/visual.scss",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}
