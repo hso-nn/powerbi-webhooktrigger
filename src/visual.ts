@@ -78,18 +78,12 @@ export class Visual implements IVisual {
             Object.assign({}, ...names.map((k: string, i: number) => ({[k]: row[i]} )))
         ))
         
-        $.ajax({
-            url: url,
-            type: "POST",
-            contentType: 'application/json',
-            data: JSON.stringify(rows),
-            success: () => {
-                console.log("Success")
-            },
-            error: (jqXhr, status, error) => {
-                console.log(error)
-            }
-        })
+        const response = fetch(url, {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(rows),
+        }).then((response) => console.log("ok"))
+        .catch((error) => console.log(error))
     }
 
     private static parseSettings(dataView: DataView): VisualSettings {
